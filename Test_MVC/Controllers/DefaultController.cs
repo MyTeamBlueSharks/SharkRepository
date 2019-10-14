@@ -20,5 +20,12 @@ namespace Test_MVC.Controllers
             return View();
 
         }
+
+        public ActionResult test_push()
+        {
+            ViewBag.flag = Request.QueryString["first"];
+            return View();
+
+        }
     }
 }
